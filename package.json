@@ -1,0 +1,26 @@
+{
+  "name": "webim",
+  "version": "1.0.0",
+  "description": "web chat",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "socket.io",
+    "express",
+    "webchat",
+    "im"
+  ],
+  "author": "william",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-develop-server": "^0.5.2",
+    "gulp-notify": "^3.2.0"
+  }
+}
