@@ -43,9 +43,9 @@
             </div>
             <div class="app-chat-operator">
               <div class="input-group">
-                <input type="text" class="form-control" name="">
+                <input type="text" class="form-control" name="" id="el_input_msg">
                 <span class="input-group-btn">
-                  <button class="btn btn-danger">
+                  <button class="btn btn-danger" id="el_btn_send">
                     Send<i class="glyphicon glyphicon-send"></i>
                   </button>
                 </span>
@@ -58,7 +58,7 @@
   </div>
   <div id="el_template">
     <div class="col-md-7 col-xs-7 app-msg-panel ${pullRight}">
-      <div class="app-msg-heading text-right">
+      <div class="app-msg-heading ${textRight}">
         <span class="${bgClass} app-msg-tip  ${pullRight}">
           <i class="glyphicon ${info-icon}"></i>${title}
         </span>

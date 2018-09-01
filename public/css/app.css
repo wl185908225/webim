@@ -16,6 +16,7 @@
   height: -webkit-calc(100% - 50px);
   height: -moz-calc(100% - 50px);
   height: calc(100% - 50px);
+  overflow-y: auto;
 }
 .app-chat-operator{
   margin-top: 15px;
@@ -46,5 +47,5 @@
   margin-right: 0;
 }
 .app-msg-body {
-  //color: #333;
+  padding-bottom: 5px;
 }

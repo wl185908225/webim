@@ -43,9 +43,17 @@ io.on('connection', (socket) => {
     io.emit('client.online', nickName);
   });
 
+  //客户端新消息
+  socket.on('server.newMsg', (msgObj) => {
+    console.log('from client data: ' + msgObj.data);
+    msgObj.time = Date.now();
+    msgObj.nickName = socket.nickName;
+    io.emit('client.newMsg', msgObj);
+  });
+
   //客户端下线
   socket.on('disconnect', () => {
-    console.log('client ' + socket.nickName + 'offlines');
+    console.log('client ' + socket.nickName + 'offline');
     socket.broadcast.emit('client.offline', socket.nickName);
   });
 
